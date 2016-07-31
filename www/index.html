@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="Exemplo">
+<head>
+	<title>Exemplo</title>
+	<script type="text/javascript" src="angular/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="ExemploCtrl">
+
+
+	<ul>
+		<li ng-repeat="nota in notas"> ID <b>{{nota.id}}</b>
+			<ul>
+				<li> CHAVE <b>{{ nota.chave}}</b></li>
+				<li> DATA <b>{{ nota.dataEmissao}}</b></li>
+				<li> CNPJ <b>{{ nota.cnpj}}</b></li>
+				<li> VALOR <b>{{ nota.valor}}</b></li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
