@@ -2,7 +2,7 @@ var express = require("express");
 var users = require('./Users')();
 var notas = require('./Notas')();
 
-var teste;
+var teste
 var app = express();
 require('events').EventEmitter.prototype._maxListeners = 100;
 var bodyParser = require('body-parser');
